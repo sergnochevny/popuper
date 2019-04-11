@@ -431,7 +431,7 @@ class Single
 
         if($result){
             $this->_clearCache();
-            $this->_load();
+            $this->load();
         }
 
         return $result;

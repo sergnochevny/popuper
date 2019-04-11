@@ -1,15 +1,35 @@
 {
-    "name": "sergey.nochevny/popuper",
-    "type": "project",
-    "minimum-stability": "dev",
-    "prefer-stable": true,
-    "require": {
-      "php": "~5.6"
-    },
-    "authors": [
-        {
-            "name": "Serhii Nochevnyi",
-            "email": "sergey.nochevny@tstechpro.com"
-        }
-    ]
+  "name": "sergey.nochevny/popuper",
+  "type": "project",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "mamuz/php-dependency-analysis": "^1.3"
+  },
+  "authors": [
+    {
+      "name": "Serhii Nochevnyi",
+      "email": "sergey.nochevny@tstechpro.com"
+    }
+  ],
+  "require-dev": {
+    "tm/tooly-composer-script": "^1.3"
+  },
+  "extra": {
+    "tools": {
+      "phpunit": {
+        "url": "https://phar.phpunit.de/phpunit-8.1.2.phar"
+      },
+      "phpDocumentor": {
+        "url": "http://www.phpdoc.org/phpDocumentor.phar"
+      },
+      "mondrian": {
+        "url": "https://github.com/Trismegiste/Mondrian/raw/master/bin/box/mondrian.phar"
+      }
+    }
+  },
+  "scripts": {
+    "post-install-cmd": "Tooly\\ScriptHandler::installPharTools",
+    "post-update-cmd": "Tooly\\ScriptHandler::installPharTools"
+  }
 }
