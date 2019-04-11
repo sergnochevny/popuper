@@ -3,17 +3,24 @@
   "type": "project",
   "minimum-stability": "dev",
   "prefer-stable": true,
-  "require": {
-    "mamuz/php-dependency-analysis": "^1.3"
-  },
   "authors": [
     {
       "name": "Serhii Nochevnyi",
       "email": "sergey.nochevny@tstechpro.com"
     }
   ],
+  "require": {
+    "composer/composer": "^1.8"
+  },
   "require-dev": {
+    "mamuz/php-dependency-analysis": "^1.3",
     "tm/tooly-composer-script": "^1.3"
+  },
+  "autoload": {
+    "optimize-autoloader": true,
+    "classmap-authoritative": true,
+    "apcu-autoloader": true,
+    "psr-4": {"\\": "src/"}
   },
   "extra": {
     "tools": {
