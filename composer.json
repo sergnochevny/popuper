@@ -1,0 +1,14 @@
+{
+    "name": "sergey.nochevny/popuper",
+    "type": "project",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+    },
+    "authors": [
+        {
+            "name": "Serhii Nochevnyi",
+            "email": "sergey.nochevny@tstechpro.com"
+        }
+    ]
+}
